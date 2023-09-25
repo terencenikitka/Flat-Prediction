@@ -2,6 +2,7 @@ const predictionBtn = document.getElementById('getPrediction')
 let div = document.getElementById('innerDiv')
 let p = document.createElement('p')
 console.log(div)
+
 const pic= document.querySelector('div img')
 console.log(pic)
 
