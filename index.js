@@ -3,11 +3,9 @@ let div = document.getElementById('innerDiv')
 let p = document.createElement('p')
 const deletBtn = document.getElementById('delete button')
 const likeBtn = document.getElementById('like button')
-console.log(div)
-cacheLike = {}
 let theChosenPrediction
 const pic= document.querySelector('#img')
-console.log(likeBtn)
+
 
 
 
@@ -34,6 +32,21 @@ deletePrediction(theChosenPrediction.id)
  pic.style.display='none';
 console.log(theChosenPrediction.id)
 
+}))
+
+
+// img eventListenr
+pic.addEventListener('mouseenter', (e)=>{
+  setTimeout(()=>{
+    pic.style.display='none'
+deletBtn.style.display='none'
+likeBtn.style.display='none'},
+500)
+})
+pic.addEventListener('mouseout',((e)=>{
+  setTimeout (()=>{pic.style.display=''
+deletBtn.style.display=''
+likeBtn.style.display=''},510)
 }))
 
 // like button event 
