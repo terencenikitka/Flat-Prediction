@@ -5,6 +5,7 @@ const deletBtn = document.getElementById('delete button')
 const likeBtn = document.getElementById('like button')
 let theChosenPrediction
 const pic= document.querySelector('#img')
+const form= document.querySelector('form')
 
 
 
@@ -31,7 +32,9 @@ deletBtn.addEventListener('click',((e)=>{
 deletePrediction(theChosenPrediction.id)
  pic.style.display='none';
 console.log(theChosenPrediction.id)
-
+predictionsArray.forEach((el)=>{if(el.id===theChosenPrediction.id)predictionsArray.splice( (el.id) - 1,el.id)})
+likeBtn.style.display='none'
+deletBtn.style.display = 'none'
 }))
 
 
@@ -60,6 +63,18 @@ likeBtn.addEventListener('click',((e)=>{
   // likeBtn.disabled = true
   likeFunc(theChosenPrediction)
 }))
+
+// submit event
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  const newPrediction= {
+    prediction: e.target.name.value,
+    image: e.target.image.value,
+    likes: 0
+  }
+  submitNewPrediction(newPrediction, predictionsArray)
+  form.reset()
+})
 })
 
 //delete btn function 
@@ -85,4 +100,29 @@ fetch (`http://localhost:3000/predictions/${prediction.id}`,{
   },
   body:JSON.stringify(prediction)
 })
+}
+
+// submit function
+function submitNewPrediction(predictionObject, array) {
+  fetch ('http://localhost:3000/predictions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(predictionObject)
+  })
+  .then(r => {
+    if (r.ok) {
+      return r.json()
+    } else {
+      throw r.statusText
+    }
+  })
+  .then(predictionObject => {
+    array.push(predictionObject)
+  })
+  .catch(error => {
+    console.log(error)
+    alert(error)
+  })
 }
