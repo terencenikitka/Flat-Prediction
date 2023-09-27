@@ -13,8 +13,9 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url('https://static.wikia.nocookie.net/evil/images/4/42/The_Hell.jpg/revision/latest/scale-to-width-down/1200?cb=20151219215041');
-  background-color: #cccccc  ;
-  color: white
+  background-color: #ff00b3  ;
+  color: white ;
+  background-size:cover;
 }
 
 
@@ -34,7 +35,9 @@ header {
 }
 
 img {
-  width: 260px;
-  height: 260px;
+  width: 360px;
+  height: 360px;
+  /* background-size: cover; */
+  /* size: 3000px; */
   /* object-position: 260px; */
 }
