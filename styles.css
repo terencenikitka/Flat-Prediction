@@ -26,18 +26,58 @@ header {
   background-color: black;
 }
 
-.box {
-  width: 300px;
-  height: 300px;
-  /* object-position: 100px; */
-  right: auto;
-  /* border: 1px dashed #1c87c9; */
-}
 
 img {
-  width: 360px;
-  height: 360px;
+  width: 350px;
+  height: 300px;
   /* background-size: cover; */
   /* size: 3000px; */
   /* object-position: 260px; */
+}
+#delete\ button {
+  background-color: white;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+#delete\ button:hover{
+  background-color: red;
+  color: white;
+}
+#like\ button{
+  background-color: white;
+  border: none;
+  color: rgb(0, 255, 21);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+
+#like\ button:hover{
+  background-color: rgb(0, 255, 4);
+  color: white;
+}
+input[type=text]{
+  background-color: black;
+  padding: 6px 10px;
+  color: crimson;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/218/218322.png');
+  background-size: 27px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+input[type=submit]
+{
+background-color: blue;
 }
