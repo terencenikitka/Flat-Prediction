@@ -16,13 +16,13 @@
       "id": 3,
       "prediction": "Expect the unexpected",
       "image": "https://www.shutterstock.com/shutterstock/photos/719696125/display_1500/stock-vector-expect-the-unexpected-type-word-text-vector-illustration-background-719696125.jpg",
-      "likes": 6
+      "likes": 0
     },
     {
       "id": 4,
       "prediction": "You will receive money from an unexpected source",
       "image": "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/meme-boy-gets-paid-4140-196a182847d3123a0e377b1059e07ceb@1x.jpg",
-      "likes": 9
+      "likes": 0
     },
     {
       "id": 5,
@@ -33,13 +33,13 @@
     {
       "prediction": "You will drop your ice cream",
       "image": "https://media.istockphoto.com/id/518928459/vector/the-boy-regretted-the-ice-cream-falling.jpg?s=612x612&w=0&k=20&c=5BR-lfYDrr9sfqeujnN5HUzeQtqzmNEmc7UMFSy9jgM=",
-      "likes": 2,
+      "likes": 0,
       "id": 6
     },
     {
       "prediction": "You will win the lottery",
       "image": "https://newsthump.com/wp-content/uploads/2023/06/PGA-Tour-boss-Jay-Monahan-in-a-pile-of-cash.jpg",
-      "likes": 1,
+      "likes": 0,
       "id": 7
     }
   ]
