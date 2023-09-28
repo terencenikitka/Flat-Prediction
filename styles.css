@@ -7,8 +7,7 @@
 body {
   padding: 1rem;
   text-align: center;
-  /* background-color: #fafafa; */
-  display: flex;
+   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -22,22 +21,79 @@ body {
 header {
   padding: 0.5rem;
   width: 100%;
-  color: white;
+  color:  rgb(85,5,5);
   background-color: black;
+   background-size: 7px;
+  background-repeat:round;
+   
 }
 
-.box {
-  width: 300px;
-  height: 300px;
-  /* object-position: 100px; */
-  right: auto;
-  /* border: 1px dashed #1c87c9; */
-}
 
 img {
-  width: 360px;
-  height: 360px;
-  /* background-size: cover; */
-  /* size: 3000px; */
-  /* object-position: 260px; */
+  width: 350px;
+  height: 300px;
+}
+#delete\ button {
+  background-color: white;
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+#delete\ button:hover{
+  background-color: red;
+  color: white;
+}
+#like\ button{
+  background-color: white;
+  border: none;
+  color: rgb(0, 255, 21);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+
+#like\ button:hover{
+  background-color: rgb(0, 255, 4);
+  color: white;
+}
+input[type=text]{
+  background-color: black;
+  padding: 6px 10px;
+  color: crimson;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/218/218322.png');
+  background-size: 27px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+input[type=submit]
+{
+background-color: black;
+color: red;
+transition-duration: 0.4s
+}
+
+#getPrediction{
+  color:rgb(128,0,32);
+  border-radius: 50px;
+  font-size: 25px;
+  transition-duration: 0.4s;
+}
+#getPrediction:hover{
+  background-color: rgb(128,0,32);
+  color: white;
+}
+input[type=submit]:hover{
+  background-color: rgb(59,5,5);
+  color: black;
 }

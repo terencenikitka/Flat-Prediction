@@ -16,13 +16,13 @@
       "id": 3,
       "prediction": "Expect the unexpected",
       "image": "https://www.shutterstock.com/shutterstock/photos/719696125/display_1500/stock-vector-expect-the-unexpected-type-word-text-vector-illustration-background-719696125.jpg",
-      "likes": 5
+      "likes": 0
     },
     {
       "id": 4,
       "prediction": "You will receive money from an unexpected source",
       "image": "https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/meme-boy-gets-paid-4140-196a182847d3123a0e377b1059e07ceb@1x.jpg",
-      "likes": 8
+      "likes": 0
     },
     {
       "id": 5,
@@ -39,7 +39,7 @@
     {
       "prediction": "You will win the lottery",
       "image": "https://newsthump.com/wp-content/uploads/2023/06/PGA-Tour-boss-Jay-Monahan-in-a-pile-of-cash.jpg",
-      "likes": 1,
+      "likes": 0,
       "id": 7
     }
   ]
